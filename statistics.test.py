@@ -13,6 +13,9 @@ class StatsTest(unittest.TestCase):
   def test_avg_is_nan_for_empty_input(self):
     computedStats = statistics.calculateStats([])
     self.assertTrue(math.isnan(computedStats["avg"]))
+    
+  def test_max_and_min_is_nan_for_empty_input(self):
+    computedStats = statistics.calculateStats([])
     self.assertTrue(math.isnan(computedStats["max"]))
     self.assertTrue(math.isnan(computedStats["min"]))
     # use isnan here
