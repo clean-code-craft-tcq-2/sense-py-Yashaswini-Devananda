@@ -9,5 +9,5 @@ def calculateStats(numbers):
     Calculated_Stats["avg"] = math.nan
     Calculated_Stats["max"] = math.nan
     Calculated_Stats["min"] = math.nan
-print (Calculated_Stats)
+  print (Calculated_Stats)
   return Calculated_Stats
