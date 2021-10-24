@@ -8,13 +8,15 @@
 import statistics
 
 class EmailAlert:
-  def __init__(self, emailSent):
-    self.emailSent = emailSent
+  def __init__(self):
+    self.emailSent = False
     
-  self.emailSent = False
+#   self.emailSent = False
   
 class LEDAlert:
-  ledGlows = False
+  def __init__(self):
+    self.ledGlows = False
+#   ledGlows = False
  
 class StatsAlerter:
   def __init__(self, maxThreshold, Alerts):
