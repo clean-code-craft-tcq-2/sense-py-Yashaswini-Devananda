@@ -7,15 +7,16 @@
 #     self.assertTrue(ledAlert.ledGlows)
 import statistics
 
-class EmailAlert():
-#    def __init__(self, maxThreshold, Alerts):
-#     self.maxThreshold = maxThreshold
-  emailSent = False
+class EmailAlert:
+  def __init__(self, emailSent):
+    self.emailSent = emailSent
+    
+  self.emailSent = False
   
-class LEDAlert():
+class LEDAlert:
   ledGlows = False
  
-class StatsAlerter():
+class StatsAlerter:
   def __init__(self, maxThreshold, Alerts):
     self.maxThreshold = maxThreshold
     self.Alerts = Alerts
