@@ -1,7 +1,7 @@
 import unittest
 import statistics
 import math
-# import Alerter
+import alerter
 # from alerter import EmailAlert
 # from alerter import LEDAlert
 # from alerter import StatsAlerter
@@ -10,30 +10,30 @@ import math
 # import StatsAlerter
 import statistics
 
-class EmailAlert:
-  def __init__(self):
-    self.emailSent = False
+# class EmailAlert:
+#   def __init__(self):
+#     self.emailSent = False
     
-#   self.emailSent = False
+# #   self.emailSent = False
   
-class LEDAlert:
-  def __init__(self):
-    self.ledGlows = False
-#   ledGlows = False
+# class LEDAlert:
+#   def __init__(self):
+#     self.ledGlows = False
+# #   ledGlows = False
  
-class StatsAlerter:
-  def __init__(self, maxThreshold, Alerts):
-    self.maxThreshold = maxThreshold
-    self.Alerts = Alerts
+# class StatsAlerter:
+#   def __init__(self, maxThreshold, Alerts):
+#     self.maxThreshold = maxThreshold
+#     self.Alerts = Alerts
     
-  def checkAndAlert(self, numbers):
-    computedStats = statistics.calculateStats(numbers)
-    if computedStats["max"] > self.maxThreshold:
-      self.Alerts[0].emailSent = True
-      self.Alerts[1].ledGlows = True
-    else:
-      self.Alerts[0].emailSent = False
-      self.Alerts[1].ledGlows = False
+#   def checkAndAlert(self, numbers):
+#     computedStats = statistics.calculateStats(numbers)
+#     if computedStats["max"] > self.maxThreshold:
+#       self.Alerts[0].emailSent = True
+#       self.Alerts[1].ledGlows = True
+#     else:
+#       self.Alerts[0].emailSent = False
+#       self.Alerts[1].ledGlows = False
       
      
 
