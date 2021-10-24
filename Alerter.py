@@ -13,10 +13,13 @@ class EmailAlert():
 class LEDAlert():
   ledGlows = False
  
-class StatsAlerter(maxThreshold, listOfAlerts):
+class StatsAlerter():
+  def __init__(self, maxThreshold):
+    self.maxThreshold = maxThreshold
+    
   def checkAndAlert(numbers):
     computedStats = statistics.calculateStats(numbers)
-    if computedStats["max"] > maxThreshold:
+    if computedStats["max"] > self.maxThreshold:
       listOfAlerts[0].emailSent = True
       listOfAlerts[1].ledGlows = True
     else:
