@@ -17,14 +17,17 @@ class StatsAlerter():
   def __init__(self, maxThreshold):
     self.maxThreshold = maxThreshold
     
+  def __init__(self, Alerts):
+    self.Alerts = Alerts
+    
   def checkAndAlert(numbers):
     computedStats = statistics.calculateStats(numbers)
     if computedStats["max"] > self.maxThreshold:
-      listOfAlerts[0].emailSent = True
-      listOfAlerts[1].ledGlows = True
+      self.Alerts[0].emailSent = True
+      self.Alerts[1].ledGlows = True
     else:
-      listOfAlerts[0].emailSent = False
-      listOfAlerts[1].ledGlows = False
+      self.Alerts[0].emailSent = False
+      self.Alerts[1].ledGlows = False
       
      
 
