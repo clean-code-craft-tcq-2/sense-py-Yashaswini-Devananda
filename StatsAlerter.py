@@ -8,19 +8,19 @@
 import statistics
 
 class EmailAlert():
+#    def __init__(self, maxThreshold, Alerts):
+#     self.maxThreshold = maxThreshold
   emailSent = False
   
 class LEDAlert():
   ledGlows = False
  
 class StatsAlerter():
-  def __init__(self, maxThreshold):
+  def __init__(self, maxThreshold, Alerts):
     self.maxThreshold = maxThreshold
-    
-  def __init__(self, Alerts):
     self.Alerts = Alerts
     
-  def checkAndAlert(numbers):
+  def checkAndAlert(self, numbers):
     computedStats = statistics.calculateStats(numbers)
     if computedStats["max"] > self.maxThreshold:
       self.Alerts[0].emailSent = True
