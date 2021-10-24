@@ -2,9 +2,9 @@ import unittest
 import statistics
 import math
 # import Alerter
-from Alerter import EmailAlert
-from Alerter import LEDAlert
-from Alerter import StatsAlerter
+from alerter import EmailAlert
+from alerter import LEDAlert
+from alerter import StatsAlerter
 
 
 class StatsTest(unittest.TestCase):
